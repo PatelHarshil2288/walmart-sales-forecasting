@@ -51,11 +51,26 @@ The selected forecasting models generated 12-week forecasts for all 45 stores, c
 The model selected for each store was based on its RMSE on the 12-week holdout period.
 
 ## Output Files
-- `Walmart_Capstone_Project.ipynb` — complete analysis and forecasting notebook.
-- `walmart_store_performance.csv` — store-level performance metrics and rankings.
-- `walmart_model_evaluation.csv` — model evaluation metrics.
-- `walmart_12_week_forecasts.csv` — forecasts for all stores and forecast dates.
+
+### Main Analysis Notebook
+- `Walmart_Capstone_Project.ipynb` — main analysis, exploratory data analysis, statistical testing, store performance, and forecasting for all 45 stores.
+- `Walmart_Capstone_Project_ARIMA_Revision.ipynb` — additional ARIMA time-series forecasting and evaluation for five selected stores.
+
+### Sales and Business Analysis
+- `walmart_year_month_sales_analysis.csv` — sales analysis by year and month.
+- `walmart_monthly_seasonality_analysis.csv` — monthly sales patterns and seasonal analysis.
+- `walmart_holiday_sales_summary.csv` — holiday versus non-holiday sales summary.
+- `walmart_store_unemployment_analysis.csv` — store-level unemployment and sales relationship analysis.
+- `walmart_store_performance.csv` — store performance metrics and rankings.
+
+### Forecasting Results
+- `walmart_12_week_forecasts.csv` — 12-week forecasts for all 45 stores.
 - `walmart_forecast_summary.csv` — summarized forecast results by store.
+- `walmart_model_evaluation.csv` — evaluation metrics for the forecasting models used across all stores.
+- `walmart_arima_12_week_forecasts.csv` — 12-week ARIMA forecasts for Stores 1, 5, 10, 20, and 33.
+- `walmart_arima_model_evaluation.csv` — ARIMA evaluation metrics for the five selected stores.
+
+The all-store forecasting workflow compares Seasonal Naive and Holt-Winters models using a 12-week holdout evaluation. The additional ARIMA workflow evaluates five selected stores using MAE and RMSE before generating their 12-week forecasts.
 
 ## How to Run
 1. Open the notebook in Google Colab.
@@ -68,3 +83,16 @@ This project uses historical data from 2010–2012. Correlations do not establis
 
 ## Conclusion
 This project demonstrates how exploratory data analysis, statistical testing, store performance comparisons, and time-series forecasting can provide useful insights for retail planning and data-driven decision-making.
+
+
+
+
+
+
+
+
+
+
+
+
+
